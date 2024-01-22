@@ -1,0 +1,177 @@
+body {
+    background-image: url('images/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #0397F4; 
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#header-text {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: white;
+}
+
+#header-text h3:first-child {
+    text-align: left;
+    margin-left: 20px;
+}
+
+#header-text h3:last-child {
+    text-align: right;
+    margin-right: 20px;
+}
+
+#header-logo {
+    width: 600px;
+    height: auto;
+}
+
+#timelineimage {
+    width: 700px;
+    height: auto;
+}
+
+#company-name {
+    color: white;
+}
+
+#timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+
+    border-bottom: 1px solid #fff;  
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+
+main h2 {
+    text-align: center;
+    color: white;
+}
+
+#timeline li {
+    width: 50%; 
+    list-style: none;
+    text-align: center;
+    margin: 20px 0;
+    color: white;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.3s;
+    position: relative;  
+    padding: 20px 0;
+}
+
+#timeline li::after {
+    content: '';
+    position: absolute;
+    top: 25%; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: calc(120%);
+    background-color: white;
+}
+
+#timeline li:last-child::after {
+    content: none;
+}
+
+#timeline li:nth-child(even) {
+    float: left; 
+    text-align: right;
+}
+
+#timeline li:nth-child(odd) {
+    float: right; 
+    text-align: left; 
+}
+
+
+
+#timeline li::after {
+    z-index: 1; 
+}
+
+#timeline li:first-child::before {
+    top: 50%;
+}
+   
+
+.time, .content {
+    display: block;
+}
+
+.time {
+    margin-bottom: 5px; 
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.content {
+    margin-top: 0px;
+    font-size: 15px;
+    font-weight: 400;
+
+    color: white; 
+    text-decoration: none;
+}
+
+.content:active, .content:visited {
+    color: white; 
+}
+
+.content:hover {
+    color: yellow; 
+}
+
+#timeline li.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#timeline li::before {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 10px auto;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.copyright, .date, .message {
+    font-size:10px;
+    font-weight: 100;
+}
+
+#footer-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white; 
+}
+
+
+#footer-logo {
+    width: 200px; 
+    height: auto;
+}
+
