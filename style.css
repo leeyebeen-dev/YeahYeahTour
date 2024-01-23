@@ -30,12 +30,12 @@ header {
 }
 
 #header-logo {
-    width: 1000px;
+    width: 750px;
     height: auto;
 }
 
 #timelineimage {
-    width: 1000px;
+    width: 700px;
     height: auto;
 }
 
@@ -99,11 +99,11 @@ main h1 {
 }
 
 #timeline li:nth-child(even) .content {
-    margin-left: 500px; 
+    margin-left: 100px; 
 }
 
 #timeline li:nth-child(odd) .content {
-    margin-right: 500px; 
+    margin-right: 100px; 
 }
 
 #timeline li::after {
