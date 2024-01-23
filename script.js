@@ -29,7 +29,7 @@ const timelineData = [
 const main = document.querySelector('main');
 
 timelineData.forEach((dayData) => {
-    const dayTitle = document.createElement('h2');
+    const dayTitle = document.createElement('h1');
     dayTitle.textContent = dayData.day;
     main.appendChild(dayTitle);
 
