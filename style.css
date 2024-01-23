@@ -98,7 +98,13 @@ main h1 {
     text-align: left; 
 }
 
+#timeline li:nth-child(even) .content {
+    margin-left: 500px; 
+}
 
+#timeline li:nth-child(odd) .content {
+    margin-right: 500px; 
+}
 
 #timeline li::after {
     z-index: 1; 
@@ -148,7 +154,7 @@ main h1 {
     height: 10px;
     background-color: white;
     border-radius: 50%;
-    margin: 10px auto;
+    margin: 20px auto;
 }
 
 footer {
